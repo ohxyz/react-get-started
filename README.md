@@ -1,6 +1,6 @@
 # React Setup
 
-A basic setup for React project with Babel, Webpack and etc.
+A basic setup for React project with Babel, Webpack and etc. If you don't like `create-react-app`, then this probably is the way you should try.
 
 # Get started
 
