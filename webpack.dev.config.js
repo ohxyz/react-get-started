@@ -15,7 +15,7 @@ module.exports = {
         contentBase: path.join(__dirname, 'dist' ),
         compress: true,
         port: 5000,
-        inline: false, /* Only disable auto-reload for browser, not code. */
+
     },
     module: {
         
