@@ -1,6 +1,6 @@
 # React Setup
 
-A basic setup for React project with Babel, Webpack and etc. If you don't like `create-react-app`, then this probably is the way you should try.
+A basic setup for React project with Babel, Webpack and etc. If you don't like `create-react-app`, this probably is the way you could try.
 
 # Get started
 
@@ -9,5 +9,5 @@ A basic setup for React project with Babel, Webpack and etc. If you don't like `
 3. Go to `my-react-project`, run `npm i`.
 4. Run `npm run dev`.
 
-### Foot notes
+#### Foot notes
 [1] If you are not using Git, then don't copy `.gitignore`.
