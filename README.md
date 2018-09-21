@@ -9,4 +9,5 @@ A basic setup for React project with Babel, Webpack and etc. If you don't like `
 3. Go to `my-react-project`, run `npm i`.
 4. Run `npm run dev`.
 
+### Foot notes
 [1] If you are not using Git, then don't copy `.gitignore`.
