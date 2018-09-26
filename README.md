@@ -5,6 +5,7 @@ This is NOT a npm package intended for installation, for example by `npm in reac
 This is a basic setup of React with Babel, Webpack and etc. If you don't like `create-react-app`, this probably is the way you could try.
 
 # Get started
+Go to https://github.com/ohxyz/react-get-started
 
 1. Create a folder e.g. `my-react-project`.
 2. Copy all<sup>[1]</sup> content of this repo into `my-react-project`. 
