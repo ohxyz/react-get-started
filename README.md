@@ -1,4 +1,4 @@
-# Basic development environment setup of a React project
+# Basic setup of a React project
 
 This is NOT a npm package intended for installation. So do NOT install it, for example by `npm i react-get-started`.
 
