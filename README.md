@@ -1,6 +1,8 @@
-# DON'T install this package by `npm i react-get-started`
+# Don't install this package
 
-This is not a npm package. This is a basic setup of React with Babel, Webpack and etc. If you don't like `create-react-app`, this probably is the way you could try.
+This is NOT a npm package intended for installation, for example by `npm in react-get-started`.
+
+This is a basic setup of React with Babel, Webpack and etc. If you don't like `create-react-app`, this probably is the way you could try.
 
 # Get started
 
@@ -9,5 +11,5 @@ This is not a npm package. This is a basic setup of React with Babel, Webpack an
 3. Go to `my-react-project`, run `npm i`.
 4. Run `npm run dev`.
 
-#### Foot notes
+### Foot notes
 [1] If you are not using Git, then don't copy `.gitignore`.
