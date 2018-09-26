@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server --config webpack.dev.config.js --open"
   },
   "author": "Ohxyz",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
