@@ -8,7 +8,7 @@ This is a basic setup of React with Babel, Webpack and etc. If you don't like `c
 Go to https://github.com/ohxyz/react-get-started
 
 1. Create a folder e.g. `my-react-project`.
-2. Copy all<sup>[1]</sup> content of this repo into `my-react-project`. 
+2. Copy all<sup>[1]</sup> content of this repo into `my-react-project`. _Tips:_ Click the green button `Clone or download` in this page and select `Download ZIP`.
 3. Go to `my-react-project`, run `npm i`.
 4. Run `npm run dev`.
 
