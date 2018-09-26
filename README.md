@@ -1,6 +1,6 @@
-# React Setup
+# DON'T install this package by `npm i react-get-started`
 
-A basic setup for React project with Babel, Webpack and etc. If you don't like `create-react-app`, this probably is the way you could try.
+This is not a npm package. This is a basic setup of React with Babel, Webpack and etc. If you don't like `create-react-app`, this probably is the way you could try.
 
 # Get started
 
