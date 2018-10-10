@@ -1,23 +1,21 @@
-var path = require( 'path' );
+const path = require( 'path' );
 
 module.exports = {
 
     mode: 'development',
     entry: './src/index.js',
     output: {
-        path: path.join( __dirname, 'dist' ),
+        path: path.join( __dirname, 'public' ),
         filename: 'bundle.js'
     },
     devtool: 'inline-source-map',
     devServer: {
-        contentBase: path.join( __dirname, 'dist' ),
+        contentBase: path.join( __dirname, 'public' ),
         compress: true,
         port: 5000,
     },
     module: {
-        
         rules: [ {
-
             test: /\.js[x]{0,1}$/,
             exclude: /(node_modules|bower_components)/,
             use: {
