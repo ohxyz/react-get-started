@@ -1,6 +1,6 @@
 {
   "name": "react-get-started",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A basic setup development environment of React",
   "repository": "git@github.com:ohxyz/react-get-started.git",
   "scripts": {
@@ -9,7 +9,14 @@
   },
   "author": "Ohxyz",
   "license": "MIT",
-  "keywords": ["react", "setup", "installation", "babel", "webpack", "create-react-app"],
+  "keywords": [
+    "react",
+    "setup",
+    "install",
+    "babel",
+    "webpack",
+    "create-react-app"
+  ],
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
