@@ -31,3 +31,23 @@ devServer: {
 ...
 ```
 
+# Developing with `less`
+```
+npm i --save-dev less less-loader css-loader style-loader
+```
+
+In `webpack.dev.config.js`, add settings of plugins in rules.
+```
+rules: [
+    ...,
+    
+    {
+        test: /\.less$/,
+        use: [ 
+            { loader: "style-loader" },
+            { loader: "css-loader" },
+            { loader: "less-loader" }
+        ]
+    }
+]
+```
