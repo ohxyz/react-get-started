@@ -36,7 +36,7 @@ devServer: {
 npm i --save-dev less less-loader css-loader style-loader
 ```
 
-In `webpack.dev.config.js`, add settings of plugins in rules.
+In `webpack.dev.config.js`, add settings of plugins in `rules`.
 ```
 rules: [
     ...,
@@ -50,4 +50,10 @@ rules: [
         ]
     }
 ]
+```
+
+Then, you can add paths of `less` files in your source code. For example,
+```
+import React from 'react';
+require( '../../less/main.less' );
 ```
