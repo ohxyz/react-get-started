@@ -31,36 +31,12 @@ devServer: {
 ...
 ```
 
-# Develop with `CSS`
+# Develop with `less`
 ```
-npm i --save-dev css-loader style-loader
+npm i --save-dev less less-loader
 ```
 
 In `webpack.dev.config.js`, add settings of plugins in `rules`.
-```
-rules: [
-    ...,
-    
-    {
-        test: /\.css$/,
-        use: [ 
-            { loader: "style-loader" },
-            { loader: "css-loader" }
-        ]
-    }
-]
-```
-
-Then, you can add paths of `CSS` files in your source code. For example,
-```
-import React from 'react';
-require( './styles/styles.css' );
-```
-
-# Develop with `less`
-```
-npm i --save-dev less less-loader css-loader style-loader
-```
 ```
 rules: [
     ...,
@@ -75,6 +51,8 @@ rules: [
     }
 ]
 ```
+
+Then, you can add paths of `less` files in your source code, e.g.
 ```
 import React from 'react';
 require( './less/main.less' );
