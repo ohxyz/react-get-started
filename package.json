@@ -1,7 +1,7 @@
 {
   "name": "react-get-started",
-  "version": "1.0.5",
-  "description": "A basic setup development environment of React",
+  "version": "1.0.6",
+  "description": "A basic setup of React development environment",
   "repository": "git@github.com:ohxyz/react-get-started.git",
   "scripts": {
     "build": "webpack --config webpack.dev.config.js",
