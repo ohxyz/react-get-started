@@ -1,6 +1,6 @@
 {
   "name": "react-get-started",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A basic setup of React development environment",
   "repository": "git@github.com:ohxyz/react-get-started.git",
   "scripts": {
