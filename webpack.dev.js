@@ -15,19 +15,14 @@ module.exports = {
         port: 5000,
     },
     module: {
-        rules: [ 
-            {
-                test: /\.js[x]{0,1}$/,
-                exclude: /node_modules/,
-                loader: 'babel-loader'
-            },
-            {
-                test: /\.css$/,
-                use: [ 
-                    { loader: "style-loader" },
-                    { loader: "css-loader" }
-                ]
-            }
-        ]
+        rules: [ {
+            test: /\.js[x]{0,1}$/,
+            exclude: /node_modules/,
+            loader: 'babel-loader'
+        },{
+            test: /\.css$/,
+            exclude: /node_modules/,
+            use: [ 'style-loader', 'css-loader' ]
+        } ]
     }
 };

@@ -2,7 +2,7 @@
 
 This is _NOT_ a npm package intended for installation. So do _NOT_ install it, e.g. by `npm i react-get-started`.
 
-This is a basic setup of React with Babel, Webpack. If you don't like `create-react-app`, it's probably the way you could go.
+This is a basic setup of React with Babel, Webpack. If you don't like `create-react-app`, it's the way you could go.
 
 # Get started
 Go to https://github.com/ohxyz/react-get-started
@@ -15,10 +15,10 @@ Go to https://github.com/ohxyz/react-get-started
 ### Foot notes
 [1] If you are not using Git, then don't copy `.gitignore`.
 
-[2] Click the green button `Clone or download` in this Github page and select `Download ZIP`. Unzip the file, and you'll get e.g. `react-get-started-master`. Copy all the content in `react-get-started-master` to `my-react-project`.
+[2] Click the green button `Code` in this Github page and select `Download ZIP`. Unzip the file, and you'll get e.g. `react-get-started-master`. Copy all the content in `react-get-started-master` to `my-react-project`.
 
 ### Tips
-If you don't like the browser auto-reloads every time you change the code, then add `inline: false` to `devServer` property in `webpack.dev.config.js`.
+If you don't like the browser auto-reloads every time you change the code, then add `inline: false` to `devServer` property in `webpack.dev.js`.
 
 ```
 ...
@@ -31,29 +31,29 @@ devServer: {
 ...
 ```
 
-# Develop with `less`
+# Develop with `Sass`
 ```
-npm i --save-dev less less-loader
+npm i --save-dev sass sass-loader
 ```
 
-In `webpack.dev.config.js`, add settings of plugins in `rules`.
+In `webpack.dev.js`, add settings of plugins in `rules`.
 ```
 rules: [
     ...,
     
     {
-        test: /\.less$/,
+        test: /\.s[ac]ss$/i,
         use: [ 
-            { loader: "style-loader" },
-            { loader: "css-loader" },
-            { loader: "less-loader" }
+            'style-loader',
+            'css-loader',
+            'sass-loader'
         ]
     }
 ]
 ```
 
-Then, you can add paths of `less` files in your source code, e.g.
+Then, you can add paths of `Sass` files in your source code, e.g.
 ```
 import React from 'react';
-require( './less/main.less' );
+import './index.scss';
 ```
