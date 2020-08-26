@@ -1,8 +1,8 @@
 # Basic setup of a React project
 
-This is _NOT_ a npm package intended for installation. So do _NOT_ install it, e.g. by `npm i react-get-started`.
+This is _NOT_ a npm package intended for installation. So do _NOT_ install it.
 
-This is a basic setup of React with Babel, Webpack. If you don't like `create-react-app`, it's the way you could go.
+This is a basic setup of React with Babel, Webpack, including least packages to let you get started.
 
 # Get started
 Go to https://github.com/ohxyz/react-get-started
