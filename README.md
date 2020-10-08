@@ -65,7 +65,7 @@ npm i --save-dev @babel/preset-typescript @types/node @types/react @types/react-
 
 ## Update Webpack config
 
-### Add TypeScrit loader
+### Add TypeScript loader
 ```
 rules: [
     ...,
@@ -89,20 +89,22 @@ resolve: {
 },
 rules: { 
     ... 
-}
-```
-
-### Update `entry` with a `tsx` file, for example
-
-```
-entry: './src/index.tsx',
-output: { ... }
+},
 ```
 
 Quoted from Webpack official site
 
 ```
 Using this will override the default array, meaning that webpack will no longer try to resolve modules using the default extensions. resolve.mainField
+```
+
+### Update `entry` with a `tsx` file, for example
+
+```
+entry: './src/index.tsx',
+output: { 
+    ... 
+},    
 ```
 
 ## Add `tsconfig.json`
