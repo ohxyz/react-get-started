@@ -87,7 +87,7 @@ Add `extensions` with `ts`, `tsx` so when import TypeScript modules, you don't h
 resolve: {
     extensions: [".js", ".json", ".ts", ".tsx"],
 },
-rules: { 
+modules: { 
     ... 
 },
 ```
