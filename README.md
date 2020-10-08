@@ -57,3 +57,81 @@ Then, you can add paths of `Sass` files in your source code, e.g.
 import React from 'react';
 import './index.scss';
 ```
+
+# Add TypeScript
+```
+npm i --save-dev @babel/preset-typescript @types/node @types/react @types/react-dom ts-loader typescript
+```
+
+## Update Webpack config
+
+### Add TypeScrit loader
+```
+rules: [
+    ...,
+    
+    {
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: 'ts-loader'
+    },
+    ...
+]
+```
+
+### Resolve file extensions
+
+Add `extensions` with `ts`, `tsx` so when import TypeScript modules, you don't have to type `.ts` or `.tsx`.
+
+```
+resolve: {
+    extensions: [".js", ".json", ".ts", ".tsx"],
+},
+rules: { 
+    ... 
+}
+```
+
+### Update `entry` with a `tsx` file, for example
+
+```
+entry: './src/index.tsx',
+output: { ... }
+```
+
+Quoted from Webpack official site
+
+```
+Using this will override the default array, meaning that webpack will no longer try to resolve modules using the default extensions. resolve.mainField
+```
+
+## Add `tsconfig.json`
+Here is an example. Some adjustment as per project's needs.
+
+```
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "outDir": "./built"
+  },
+  "include": [
+    "src"
+  ]
+}
+```
