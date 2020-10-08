@@ -107,6 +107,17 @@ output: {
 },    
 ```
 
+## Update `.babelrc`
+
+```
+{
+  "presets": [
+        ...,
+        "@babel/preset-typescript"
+    ]
+}
+```
+
 ## Add `tsconfig.json`
 Here is an example. Some adjustments may be required as per project's needs.
 
