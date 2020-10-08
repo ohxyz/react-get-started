@@ -2,7 +2,7 @@
 
 This is _NOT_ a npm package intended for installation. So do _NOT_ install it.
 
-This is a basic setup of React with Babel, Webpack, including least packages to let you get started.
+This is a basic setup of React with Babel, Webpack, including least packages to get you started.
 
 # Get started
 Go to https://github.com/ohxyz/react-get-started
@@ -95,7 +95,7 @@ rules: {
 Quoted from Webpack official site
 
 ```
-Using this will override the default array, meaning that webpack will no longer try to resolve modules using the default extensions. resolve.mainField
+Using this will override the default array, meaning that webpack will no longer try to resolve modules using the default extensions.
 ```
 
 ### Update `entry` with a `tsx` file, for example
