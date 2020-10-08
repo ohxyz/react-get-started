@@ -4,7 +4,7 @@ This is _NOT_ a npm package intended for installation. So do _NOT_ install it.
 
 This is a basic setup of React with Babel, Webpack, including least packages to get you started.
 
-# Get started
+## Get started
 Go to https://github.com/ohxyz/react-get-started
 
 1. Create a folder e.g. `my-react-project`.
@@ -31,7 +31,7 @@ devServer: {
 ...
 ```
 
-# Develop with `Sass`
+## Develop with `Sass`
 ```
 npm i --save-dev sass sass-loader
 ```
@@ -58,14 +58,14 @@ import React from 'react';
 import './index.scss';
 ```
 
-# Add TypeScript
+## Add TypeScript
 ```
 npm i --save-dev @babel/preset-typescript @types/node @types/react @types/react-dom ts-loader typescript
 ```
 
-## Update Webpack config
+### Update Webpack config
 
-### Add TypeScript loader
+#### Add TypeScript loader
 ```
 rules: [
     ...,
@@ -79,7 +79,7 @@ rules: [
 ]
 ```
 
-### Resolve file extensions
+#### Resolve file extensions
 
 Add `extensions` with `ts`, `tsx` so when import TypeScript modules, you don't have to type `.ts` or `.tsx`.
 
@@ -98,7 +98,7 @@ Quoted from Webpack official site
 Using this will override the default array, meaning that webpack will no longer try to resolve modules using the default extensions.
 ```
 
-### Update `entry` with a `tsx` file, for example
+#### Update `entry` with a `tsx` file, for example
 
 ```
 entry: './src/index.tsx',
@@ -108,7 +108,7 @@ output: {
 ```
 
 ## Add `tsconfig.json`
-Here is an example. Some adjustment as per project's needs.
+Here is an example. Some adjustments may be required as per project's needs.
 
 ```
 {
