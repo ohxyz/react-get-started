@@ -31,6 +31,9 @@ devServer: {
 ...
 ```
 
+### Hot reload in Windows 10 WSL2
+Refer to https://stackoverflow.com/questions/62780245
+
 ## Develop with `Sass`
 ```
 npm i --save-dev sass sass-loader
