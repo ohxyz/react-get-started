@@ -8,7 +8,6 @@ module.exports = {
     devServer: {
         compress: true,
         port: 5000,
-        // Does not give detailed error due to issues in webpack-dev-server
         overlay: true,
     },
     module: {
