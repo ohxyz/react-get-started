@@ -1,20 +1,28 @@
 #!/bin/sh
 
 if [ $# -eq 0 ]
-  then
-    echo "Please provide a project name."
-    exit 1
+then
+  echo "[Error] Please provide a project name!"
+  exit 1
+fi
+
+if [ -d $1 ] 
+then
+  echo "[Error] Directory $1 exists!" 
+  exit 1
 fi
     
-echo "Create project directory."
-rm -rf $1 && mkdir $1
+echo "[Step] Create project directory..."
+mkdir $1
 
-echo "Copy files to $1."
-curl https://codeload.github.com/ohxyz/react-get-started/zip/master | tar -xf - -C $1 --strip-components=2 react-get-started-master/src
+echo "[Step] Copy files to $1..."
+curl https://codeload.github.com/ohxyz/react-get-started/zip/master \
+  | tar -xf - -C $1 --strip-components=2 react-get-started-master/src
+
 cd $1
 
-echo "Install node packages."
+echo "[Step] Install node packages..."
 npm i
 
-echo "Start development."
+echo "[Finish] Start development."
 npm run dev
