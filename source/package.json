@@ -1,6 +1,6 @@
 {
   "name": "my-project",
-  "version": "1.0.8",
+  "version": "1.0.0",
   "description": "A basic setup of React development environment",
   "scripts": {
     "build": "rm -rf ./dist && webpack --config webpack.prod.js",
